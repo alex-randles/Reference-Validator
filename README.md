@@ -14,6 +14,7 @@ python3 validateReferences.py <word_document> <number_of_references>
 ```
 
 ## Example Usage  
+This example document only cites 28 references, which means 29, 3o, 31, 32 are not cited in the document and should be removed from the bibliography.
 ```python
 python validateReferences.py "paper_v1.docm" 33
 ```
