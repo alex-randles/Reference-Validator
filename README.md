@@ -19,7 +19,7 @@ python validateReferences.py "paper_v1.docm" 33
 ```
 
 ## Example Output   
-```python
+```
 References not present: 29, 30, 31, 32
 ```
 
