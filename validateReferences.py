@@ -26,9 +26,17 @@ class ReferenceValidator:
             print("All references cited!")
 
 
-if __name__ == "__main__":
-    word_document = sys.argv[1]
-    num_references = int(sys.argv[2])
-    reference_validator = ReferenceValidator(word_document, num_references)
-    reference_validator.readFile()
+def main():
+	if len(sys.argv) > 2: 
+		word_document = sys.argv[1]
+		num_references = int(sys.argv[2])
+		reference_validator = ReferenceValidator(word_document, num_references)
+		reference_validator.readFile()
+	else:
+		print("Please pass arguments to program!")
+		print("Sample usage") 
+		print("python3 validateReferences.py <word_document> <number_of_references>") 
+		exit() 
 
+if __name__ == "__main__":
+	main() 
