@@ -20,7 +20,10 @@ class ReferenceValidator:
             if int(reference_numbers) in compare:
                 compare.remove(reference_numbers)
         compare = [str(ref) for ref in compare]
-        print("References not present: {}".format(", ".join(compare)))
+        if compare:
+            print("References not cited: {}".format(", ".join(compare)))
+        else:
+            print("All references cited!")
 
 
 if __name__ == "__main__":
