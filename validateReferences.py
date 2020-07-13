@@ -14,7 +14,7 @@ class ReferenceValidator:
 
     def readFile(self):
         result = docx2txt.process(self.file)
-        compare = [i for i in range(1, self.num_references)]
+        compare = [i for i in range(1, self.num_references+1)]
         for reference_numbers in re.findall(r"\[(\w+)\]", result):
             reference_numbers = int(reference_numbers)
             if int(reference_numbers) in compare:
